@@ -1,0 +1,158 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* #region  /**=========== Primary Color =========== */
+  /* !STARTERCONF Customize these variable, copy and paste from /styles/colors.css for list of colors */
+  --tw-color-primary-ming: 73 113 116;
+  --tw-color-primary-mingLight: 86, 133, 137;
+  --tw-color-primary-mingDark: 60, 93, 95;
+  --tw-color-primary-soda: 235 100 64;
+  --tw-color-primary-sodaLight: 238, 125, 95;
+  --tw-color-primary-sodaDark: 232, 75, 33;
+  --tw-color-primary-cream: 241 247 238;
+  --tw-color-primary-creamLight: 251, 252, 250;
+  --tw-color-primary-creamDark: 222, 236, 215;
+  --tw-color-primary-nyanza: 224 237 197;
+  --tw-color-primary-nyanzaLight: 238, 245, 223;
+  --tw-color-primary-nyanzaDark: 210, 229, 171;
+  --tw-color-primary-lime: 231 245 158;
+  --tw-color-primary-limeLight: 239, 248, 189;
+  --tw-color-primary-limeDark: 223, 242, 127;
+  --tw-color-primary-crayola: 221 237 170;
+  --tw-color-primary-crayolaLight: 232, 243, 198;
+  --tw-color-primary-crayolaDark: 210, 231, 142;
+  --tw-color-primary-lavender: 203 203 212;
+  --tw-color-primary-lavenderLight: 222, 222, 227;
+  --tw-color-primary-lavenderDark: 184, 184, 197;
+  --tw-color-primary-gold: 194 168 62;
+  --tw-color-primary-goldLight: 202, 180, 88;
+  --tw-color-primary-goldDark: 169, 146, 53;
+  --tw-color-primary-bisque: 252 222 190;
+  --tw-color-primary-bisqueLight: 254, 239, 223;
+  --tw-color-primary-bisqueDark: 251, 206, 158;
+  --tw-color-primary-bud: 212 210 165;
+  --tw-color-primary-budLight: 223, 222, 188;
+  --tw-color-primary-budDark: 201, 198, 142;
+  --color-primary-ming: rgb(73 113 116); /* #497174 */
+  --color-primary-mingLight: rgb(86, 133, 137); /* #568589 */
+  --color-primary-mingDark: rgb(60, 93, 95); /* #3c5d5f */
+  --color-primary-soda: rgb(235 100 64); /* #EB6440 */
+  --color-primary-sodaLight: rgb(238, 125, 95); /* #EE7D5F */
+  --color-primary-sodaDark: rgb(232, 75, 33); /* #E84B21 */
+  --color-primary-cream: rgb(241 247 238); /* #F1F7EE */
+  --color-primary-creamLight: rgb(251, 252, 250); /* #FBFCFA */
+  --color-primary-creamDark: rgb(222, 236, 215); /* #DEECD7 */
+  --color-primary-nyanza: rgb(224 237 197); /* #E0EDC5 */
+  --color-primary-nyanzaLight: rgb(238, 245, 223); /* #EEF5DF */
+  --color-primary-nyanzaDark: rgb(210, 229, 171); /* #D2E5AB */
+  --color-primary-lime: rgb(231 245 158); /* #E7F59E */
+  --color-primary-limeLight: rgb(239, 248, 189); /* #EFF8BD */
+  --color-primary-limeDark: rgb(223, 242, 127); /* #DFF27F */
+  --color-primary-crayola: rgb(221 237 170); /* #DDEDAA */
+  --color-primary-crayolaLight: rgb(232, 243, 198); /* #E8F3C6 */
+  --color-primary-crayolaDark: rgb(210, 231, 142); /* #D2E78E */
+  --color-primary-lavender: rgb(203 203 212); /* #CBCBD4 */
+  --color-primary-lavenderLight: rgb(222, 222, 227); /* #DEDEE3 */
+  --color-primary-lavenderDark: rgb(184, 184, 197); /* #B8B8C5 */
+  --color-primary-gold: rgb(194 168 62); /* #C2A83E */
+  --color-primary-goldLight: rgb(202, 180, 88); /* #CAB458 */
+  --color-primary-goldDark: rgb(169, 146, 53); /* #A99235 */
+  --color-primary-bisque: rgb(252 222 190); /* #FCDEBE */
+  --color-primary-bisqueLight: rgb(254, 239, 223); /* #FEEFDF */
+  --color-primary-bisqueDark: rgb(251, 206, 158); /* #FBCE9E */
+  --color-primary-bud: rgb(212 210 165); /* #D4D2A5 */
+  --color-primary-budLight: rgb(223, 222, 188); /* #DFDEBC */
+  --color-primary-budDark: rgb(201, 198, 142); /* #C9C68E */
+  /* #endregion  /**======== Primary Color =========== */
+}
+
+@layer base {
+  /* inter var - latin */
+  @font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: optional;
+    src: url('/fonts/inter-var-latin.woff2') format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+      U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212,
+      U+2215, U+FEFF, U+FFFD;
+  }
+
+  .cursor-newtab {
+    cursor: url('/images/new-tab.png') 10 10, pointer;
+  }
+
+  /* #region  /**=========== Typography =========== */
+  .h0 {
+    @apply font-primary text-3xl font-bold text-primary-ming md:text-5xl;
+  }
+
+  h1,
+  .h1 {
+    @apply font-primary text-2xl font-bold text-primary-mingDark md:text-4xl;
+  }
+
+  h2,
+  .h2 {
+    @apply font-primary text-xl font-bold text-primary-ming md:text-3xl;
+  }
+
+  h3,
+  .h3 {
+    @apply font-primary text-lg font-bold text-primary-mingLight md:text-2xl;
+  }
+
+  h4,
+  .h4 {
+    @apply font-primary text-base font-bold text-primary-mingLight md:text-lg;
+  }
+
+  body,
+  .p {
+    @apply font-primary text-sm text-primary-ming md:text-base;
+  }
+  /* #endregion  /**======== Typography =========== */
+
+  .layout {
+    /* 1100px */
+    max-width: 68.75rem;
+    @apply mx-auto w-11/12;
+  }
+
+  .bg-dark a.custom-link {
+    @apply border-gray-200 hover:border-gray-200/0;
+  }
+
+  /* Class to adjust with sticky footer */
+  .min-h-main {
+    @apply min-h-[calc(100vh-56px)];
+  }
+}
+
+@layer utilities {
+  .animated-underline {
+    background-image: linear-gradient(#33333300, #33333300),
+      linear-gradient(
+        to right,
+        var(--color-primary-400),
+        var(--color-primary-500)
+      );
+    background-size: 100% 2px, 0 2px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .animated-underline {
+      transition: 0.3s ease;
+      transition-property: background-size, color, background-color,
+        border-color;
+    }
+  }
+  .animated-underline:hover,
+  .animated-underline:focus-visible {
+    background-size: 0 2px, 100% 2px;
+  }
+}
