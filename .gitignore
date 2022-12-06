@@ -36,10 +36,13 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# next-sitemap
+# next-sitemapgit st
 robots.txt
 sitemap.xml
 sitemap-*.xml
 
 # changelog
 CHANGELOG.md
+
+# Jetbrains IDE
+.idea

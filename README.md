@@ -35,4 +35,9 @@ https://stackoverflow.com/questions/60618844/react-hooks-useeffect-is-called-twi
 - display search movies in list when search text is not null
 - add star indicator vor rating
 
-I do not find the way to filter movies depending on genres so the top filter will not work as expexted
+I do not find the way to filter movies depending on genres so the top filter will not work as expected
+
+## 5. Other things I would have done with more time
+- Error handler with Error Boundary
+- display toast on API errors
+
